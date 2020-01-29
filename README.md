@@ -9,3 +9,10 @@ Fastai course notebooks.
 * The NIC folder contains NIC image classification prototype model. It will be moved in the future.
 
 * The fellowship folder is a temporary folder to work on Challenge problem from fellowship, it also has detailed explanation about few fastai factory functions. 
+** to add counter function try this code (I have not tried)
+      for c in data.classes:
+        cnt = 0
+        for i in range(len(data.train_ds.y)):
+        if str(data.train_ds.y[i]) == c:
+        cnt += 1
+     print(f’{c}: {cnt}’)
